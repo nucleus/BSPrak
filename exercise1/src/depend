@@ -1,0 +1,4 @@
+main.o: main.c driver/leds.h driver/serial.h
+serial.o: driver/serial.c driver/serial.h
+leds.o: driver/leds.c driver/leds.h
+main.o: main.c driver/leds.h driver/serial.h
