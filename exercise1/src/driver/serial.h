@@ -12,6 +12,18 @@
 #define PARITY_BIT (1 << 11)
 #define TXRDY_BIT (1 << 1)
 
+struct dbgUnit{
+    unsigned int cr;     //Control Register
+    unsigned int mr;     //Mode Register
+    unsigned int ier;    //Interrupt Enable Register
+    unsigned int idr;    //Interrupt Disable Register
+    unsigned int imr;    //Interrupt Mask Register
+    unsigned int sr;     //Status Register
+    unsigned int rhr;    //Receive Holding Register
+    unsigned int thr;    //Transmit Holding Register
+    unsigned int brgr;   //Baud Rate Generator Register
+};
+
 void serial_writechar(char chr);
 void serial_write(char* str);
 
