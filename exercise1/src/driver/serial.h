@@ -18,8 +18,8 @@ struct dbgUnit{
     unsigned int ier;    //Interrupt Enable Register
     unsigned int idr;    //Interrupt Disable Register
     unsigned int imr;    //Interrupt Mask Register
-    unsigned int sr;     //Status Register
-    unsigned int rhr;    //Receive Holding Register
+    volatile unsigned int sr;     //Status Register
+    volatile unsigned int rhr;    //Receive Holding Register
     unsigned int thr;    //Transmit Holding Register
     unsigned int brgr;   //Baud Rate Generator Register
 };
